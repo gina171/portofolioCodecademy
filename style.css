@@ -1,0 +1,171 @@
+html {
+    background-color: rgb(252, 215, 221);
+    font-family: monospace, sans-serif;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.icon {
+    color: rgb(53, 52, 52);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+img {
+    height: 400px;
+    width: auto;
+    border-radius: 50%;
+    border: 10px solid white;
+    margin: 10px;
+}
+
+.double-border {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 3%;
+    border-bottom: 10px dotted white;
+    text-align: center;
+    flex-wrap: wrap;
+    /* text-shadow: 
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,  
+    -1px 1px 0 #fff,  
+    1px 1px 0 #fff; */
+
+}
+
+nav {
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin:0 10px;
+}
+
+nav ul li a {
+    color: rgb(53, 52, 52);
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    padding: 20px 5px;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 6% 4%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 50%;
+    color: rgb(53, 52, 52);
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    position: relative;
+    right: 5%;
+    text-align: center;
+
+}
+
+h1:before {
+    content: "-->";
+    color: white;
+    position: relative;
+    right: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.description {
+    width: 70%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        flex-direction: column;
+    }
+    h1 {
+        position: static;
+        text-align: center;
+
+    }
+    h1:before {
+        content:'';
+    }
+    .about {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contact {
+        width: auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    img {
+        width: 250px;
+        height: auto;   
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+}
