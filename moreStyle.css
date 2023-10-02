@@ -71,12 +71,32 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .project {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: auto 50px;
+}
+
+.project .text {
+    margin: 0 15px;
+}
+
+.project a {
+    text-decoration: none;
+    color: rgb(53, 52, 52);
+}
+
+.project p a {
+    text-decoration: underline;
 }
 
 .image-box {
@@ -93,6 +113,7 @@ img {
     height: auto;
     border: 3px solid darkgrey;
     box-shadow: 3px 3px gray;
+    transition: width 0.2s;
 }
 
 img:hover {
@@ -112,7 +133,84 @@ h1 {
     color: rgb(53, 52, 52);
 }
 
-.project a {
-    text-decoration: none;
-    color: rgb(53, 52, 52);
+
+@media only screen and (max-width: 1030px) {
+    .project {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid darkgrey;
+        border-radius: 30px;
+        margin: 30px 50px;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contact {
+        width: auto;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 670px) {
+    img {
+        width: 400px;
+        height: auto;
+    }
+    img:hover {
+        width: 410px;
+        height: auto;
+    }
+    .image-box {
+        width: 423px;
+        height: 250px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+    h1 {
+        margin: 35px 20%;
+    }
+    .project {
+        margin: 20px 5px;
+        max-width: 500px;
+        flex-shrink: 1;
+    }
+    .image-box {
+        margin: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    img {
+        width: 300px;
+        height: auto;
+    }
+    img:hover {
+        width: 310px;
+        height: auto;
+    }
+    .image-box {
+        width: 323px;
+        height: 180px;
+    }
+    .project {
+        max-width: 350px;
+        margin: 5px 10px;
+        flex-shrink: 1;
+    }
 }

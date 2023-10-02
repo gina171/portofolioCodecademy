@@ -136,7 +136,7 @@ h1:before {
     color: white;
     position: relative;
     right: 10px;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -185,6 +185,10 @@ h1:before {
     img {
         width: 250px;
         height: auto;   
+    }
+    .container {
+        width: 280px;
+        height: 280px;
     }
     nav ul {
         flex-wrap: wrap;
