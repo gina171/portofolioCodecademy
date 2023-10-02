@@ -30,12 +30,6 @@ header {
     border-bottom: 10px dashed rgb(255, 255, 255);
     text-align: center;
     flex-wrap: wrap;
-    /* text-shadow: 
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,  
-    -1px 1px 0 #fff,  
-    1px 1px 0 #fff; */
-
 }
 
 nav {

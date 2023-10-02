@@ -31,13 +31,13 @@ img {
     width: auto;
     border-radius: 50%;
     border: 10px solid white;
-    margin: 10px;
+    margin: 7px;
 }
 
 .double-border {
     border: 3px solid white;
     border-radius: 50%;
-    padding: 7px;
+    padding: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,12 +63,6 @@ header {
     border-bottom: 10px dashed white;
     text-align: center;
     flex-wrap: wrap;
-    /* text-shadow: 
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,  
-    -1px 1px 0 #fff,  
-    1px 1px 0 #fff; */
-
 }
 
 nav {
@@ -109,7 +103,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 6% 4%;
+    margin: 5% 4%;
 }
 
 .about {
