@@ -80,8 +80,10 @@ nav ul li a {
     margin: auto 50px;
 }
 
+
+
 .project .text {
-    margin: 0 15px;
+    margin: 0 15px 20px 15px;
 }
 
 .project a {
@@ -133,13 +135,14 @@ h1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid darkgrey;
+        border: 5px solid white;
         border-radius: 30px;
         margin: 30px 50px;
     }
     h2 {
         text-align: center;
     }
+
 }
 
 @media only screen and (max-width: 750px) {
